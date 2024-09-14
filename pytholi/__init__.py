@@ -1,6 +1,11 @@
-from time import sleep
-import pygame
-
+# avoid first print____________________
+import sys, os                      # |
+from time import sleep              # |
+sys.stdout = open(os.devnull, 'w')  # |
+import pygame                       # | 
+sys.stdout.close()                  # |
+sys.stdout = sys.__stdout__         # |
+#______________________________________
 from .settings import Settings
 from .sprite import Sprite
 
