@@ -7,6 +7,8 @@ class Sprite(pygame.sprite.Sprite):
         self.image = pygame.Surface(Settings.RECT)
         self.image.fill(color)
         self.rect = self.image.get_rect()
-        self.rect.topleft = Settings.posToPixel(x, y)
+        self.move(x, y)
 
+    def move(self, x, y):
+        self.rect.topleft = Settings.posToPixel(x, y)
 
