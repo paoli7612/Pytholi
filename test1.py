@@ -10,4 +10,4 @@ grill(screen) # stampa la griglia sullo schermo
 picture(screen, sprite) # stampa il player alla sua posizione
 
 flip() # mostra le modifiche sullo schermo
-sleep(2) # aspetta 2 secondi
+sleep(3) # aspetta 2 secondi

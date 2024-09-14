@@ -26,4 +26,7 @@ def picture(screen, sprite):
 def flip():
     pygame.display.flip()
 
+def set_tile(tile):
+    Settings.setTile(tile)
+
 
