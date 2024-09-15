@@ -8,6 +8,7 @@ sys.stdout = sys.__stdout__         # |
 #______________________________________
 from .settings import Settings
 from .sprite import Sprite
+from .loop import Loop
 
 def start(tileX=None, tileY=None):
     if tileX and tileY:
@@ -29,4 +30,5 @@ def flip():
 def set_tile(tile):
     Settings.setTile(tile)
 
-
+def keys():
+    return pygame.key.get_pressed()

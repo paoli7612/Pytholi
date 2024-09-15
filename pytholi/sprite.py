@@ -12,3 +12,7 @@ class Sprite(pygame.sprite.Sprite):
     def move(self, x, y):
         self.rect.topleft = Settings.posToPixel(x, y)
 
+    def getPos(self):
+        xp, yp = self.rect.topleft
+        return xp/Settings.TILE, yp/Settings.TILE
+
