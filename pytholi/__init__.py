@@ -32,3 +32,9 @@ def set_tile(tile):
 
 def keys():
     return pygame.key.get_pressed()
+
+def pressed(name):
+    if name == 'up': return keys()[pygame.K_UP]
+    elif name == 'down': return keys()[pygame.K_DOWN]
+    elif name == 'left': return keys()[pygame.K_LEFT]
+    elif name == 'right': return keys()[pygame.K_RIGHT]
