@@ -20,7 +20,24 @@ Il cambio della grandezza `TILE` è raccomandata solo tramite il metodo `set_til
 
 ## Istruzioni
 
-- Avvio standard `screen = start()`
-- Impostando le dimensioni `screen = start(12, 9)`
+### Template
+```python
+    from pytholi import *
+    screen = start() # nuova schermata
+    screen.fill('white') # colora di bianco
+    grill(screen) # stampa la griglia
+    flip() # mostra le modifiche allo screen
+    sleep(1) # aspetta 1 secondo
+```
+
+- Avvio
+  - Avvio standard `screen = start()`
+  - Impostando le dimensioni `screen = start(12, 9)`
+- Stampa
+  - Flip and wait
+```python
+    flip()
+    sleep(3)
+```
 
 <img src="img/Screenshot from 2024-09-14 22-18-03.png">
